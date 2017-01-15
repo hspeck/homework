@@ -23,6 +23,15 @@ pnas_sub/ pnas_final original/
 
 
 
+Exploring more ls arguements
+what do -l and -h do to ls arguement?
+-l gives long listing format (i.e. give additional info e.g. size and modification time) combined with-h or -lh gives human readable sizes of the files listed, e.g 4 K not 4096
+
+
+
+
+
+
 
 
 
