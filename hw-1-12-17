@@ -28,6 +28,8 @@ what do -l and -h do to ls arguement?
 -l gives long listing format (i.e. give additional info e.g. size and modification time) combined with-h or -lh gives human readable sizes of the files listed, e.g 4 K not 4096
 
 
+Listing Recursively and By time
+ls -R -t lists the directories alphabetically and the files and directories in each directory displayed by time of last change.
 
 
 
