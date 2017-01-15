@@ -1,0 +1,12 @@
+Absolute vs Relative Paths
+start in /Users/amanda/data want to end up in home directory /Users/amanda
+
+cd ~ works (puts in home directory)
+cd ~/data/.. works(navigates to home directory, then data, then up a level back to home directory)
+cd   works (puts in home directory)
+cd .. works (puts in parent directory, which is home directory)
+
+
+
+
+
