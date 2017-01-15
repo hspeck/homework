@@ -13,6 +13,16 @@ start in /Users/thing; say ls ../backup displays?
 4. original, pnas_final, pnas_sub
 
 
+ls Reading Comprehension
+start in /Users/backup, and -r displays thing in reverse order, what command display 
+pnas_sub/ pnas_final original/
+
+2. ls -r -F
+3. ls -r -F /Users/backup
+4. both 2 and 3 work
+
+
+
 
 
 
