@@ -1476,3 +1476,10 @@ Chiroptera Vespertilionidae Pipistrellus Pipistrellus nanulus 2.51
   698  echo "5." >> ~/Desktop/eeb-177/homework/week-2-hw-eeb177.txt 
   699  history | tail n +684 >> ~/Desktop/eeb-177/homework/week-2-hw-eeb177.txt 
   700  history | tail -n +684 >> ~/Desktop/eeb-177/homework/week-2-hw-eeb177.txt 
+6.
+566026 ../data/Marra2014_data.fasta
+16
+9465
+>cotig00302,lgth1014,3330,giogop00002,ttit_thh
+contig00302 has the highest number of reads with 3300 reads
+Question 7
