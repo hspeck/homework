@@ -1539,7 +1539,3 @@ done
 Finding Files with different Properties
 
 find ./ -user ahmed -mtime -1 -type f
-
-
-
-
