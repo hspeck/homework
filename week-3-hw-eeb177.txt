@@ -1,0 +1,17 @@
+Question 1
+	1.
+
+grep -w -E -c "^((3)|(27))" ../data/Gesquiere2011_data.csv 
+
+66 times
+
+	2. Content of script Baboonsearch.sh
+
+#! /bin/bash
+
+grep -wcE "^($1)" $2
+
+	3.
+
+
+
