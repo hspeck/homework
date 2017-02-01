@@ -1,4 +1,6 @@
 Question 1
+
+
 	1.
 
 grep -w -E -c "^((3)|(27))" ../data/Gesquiere2011_data.csv 
@@ -15,12 +17,14 @@ grep -wcE "^($1)" $2
 
 #! /bin/bash
 
-tail -n +2 $1 | cut -f 1 |uniq > UltBabSearchHolderDoc.txt
+Individuals=$(tail -n +2 $1 | cut -f 1 | sort -n|uniq)
 
-while read ID 
+for ID in $Individuals
 	do printf "Individual: $ID: Times sampled: "	
 	tail -n +2 $1| grep -wcE "^$ID"
-done < UltBabSearchHolderDoc.txt
+done
+
+
 
 
 Question 2
@@ -36,19 +40,28 @@ cat $1| wc -l
 printf "Number of Columns: "
 head -n +1 $1 | grep -oE "[01] " | wc -l
 
+
+
 	2. contents of script netsize_all.sh
 
 #! /bin/bash
 
 for file in ~/Desktop/eeb-177/CSB/unix/data/Saavedra2013/*.txt
-	do printf "$file ";
-		cat $file | wc -l;
-		head -n +1 $file |grep -oE "[01] "| wc -l
-	done
+do 
+	row=$(cat $file | wc -l)
+	column=$(head -n +1 $file |grep -oE "[01] "| wc -l)
+	printf "$file $row $column \n"	
+done
 
 
 
 	3. Using netsize_all.sh
+and  netsize_all.sh |  sort -k 2 -n -r | head 
+to find most rows
+and  netsize_all.sh |  sort -k 3 -n -r | head
+to find most columns
+
+
 discover that n58.txt has the most rows, with 678
 and that n56.txt has the most columns with 209
 
