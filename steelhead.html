@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+
+<head>
+	<meta property="og:title" content="Oncorhynchus mykiss summary page" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.fishbase.us/summary/Oncorhynchus-mykiss.html" />
+	<meta property="og:image" content="http://www.fishbase.us/images/thumbnails/jpg/tn_Onmyk_f0.jpg" />
+	<meta property="og:site_name" content="FishBase" />
+	<meta property="fb:app_id" content="149230358545215" />
+
+	<meta charset="utf-8">
+	<meta name='keywords' content="Oncorhynchus mykiss, Rainbow trout, Salmonidae, Salmonids, gamefish , maturity">
+	<title>Oncorhynchus mykiss,  Rainbow trout  : fisheries, aquaculture, gamefish</title>
+	<link rel="stylesheet" href="/css/speciessummary_layout.css" type="text/css">
+	<link rel="stylesheet" href="/fishbase.css" type="text/css">
+	<link rel="stylesheet" href="/css/spsum.css" type="text/css">
+	<link href="/libs/jquery/css/jquery-ui-custom.css" rel="stylesheet" type="text/css"/>
+	<script language="javascript" src="/includes/ajax/ajax.js"></script>
+	<script type="text/javascript" src="/libs/jquery/jquery.js"></script>
+	<script src='/libs/jquery/jquery-ui-min.js'></script>
+	<script src='/libs/jquery/scripts/speciessummary.js'></script>
+	<script src="/jquery/ImageAspectRatio.js"></script>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '149230358545215', // App ID
+          channelUrl : 'http://www.fishbase.us/channel.php', // Channel File
+          status     : true, // check login status
+          cookie     : true, // enable cookies to allow the server to access the session
+          xfbml      : true  // parse XFBML
+        });
+        // Track likes in google analytics
+        FB.Event.subscribe('edge.create', function(targetUrl) {
+            _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+        });
+        // Track unlikes in google analytics
+        FB.Event.subscribe('edge.remove', function(targetUrl) {
+          _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+        });
+        // Track Share in google analytics
+        FB.Event.subscribe('message.send', function(targetUrl) {
+          _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+        });
+        // Additional initialization code here
+      };
+
+      // Load the SDK Asynchronously
+      (function(d){
+         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement('script'); js.id = id; js.async = true;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         ref.parentNode.insertBefore(js, ref);
+       }(document));
+    </script>
+
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=149230358545215";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4126213-11', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+
+<body>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+
+		<!-- AD section -->
+
+	<div id="ss-ad" style="clear:right">
+			</div>
+
+	<div id="ss-container">
+		<!-- Search Box -->
+		<div id="search-box" title="Search FishBase" style="display:none">
+			<p>Common name (e.g. trout)</p>
+			<form name="fn_comnames" action="/ComNames/CommonNameSearchList.php" method="post">
+				<input type="hidden" name="crit1_fieldname" value="COMNAMES.ComName">
+				<input type="hidden" name="lang" value="English">
+				<input type="hidden" name="resultPage" value="1" />
+				<input type="hidden" name="crit1_fieldtype" value="CHAR">
+
+				<select name="crit1_operator" size="1">
+					<option value="CONTAINS">contains</option>
+					<option value="BEGINS_WITH">begins with</option>
+					<option value="ENDS_WITH">ends with</option>
+					<option value="EQUAL" selected>is</option>
+				</select>
+				<input type="text" name="CommonName" id="CommonName" value=""/>
+				<input type="submit" value="search" />
+			</form>
+
+			<p>Genus + Species (e.g. Gadus morhua)</p>
+			<form name="fn_genspec" action="/Nomenclature/ScientificNameSearchList.php?" method="post">
+				<input name="gs" id="gs" size="35" value=""/>
+				<input type="hidden" name="group" value="summary" />
+				<input type="submit" value="search"/>
+			</form>
+		</div>
+		<!-- Top Menu -->
+		<div id="ss-topmenu" class="slabel7">
+			<div class="floatRight">
+			<a href="http://www.facebook.com/FishBase">
+				<img src="/images/png/facebook-logo.png" height="33" width="33" border="0"/>
+			</a>
+			<!-- <fb:like href="http://www.fishbase.us/summary/Oncorhynchus-mykiss.html" layout="button_count" width="50" ref="top_sspage"></fb:like> -->
+			<a href='http://fishbase.us/donate/donate.php'  ><img src='/images/gifs/DonateButton.gif' width='90' alt=''></a>
+			</div>
+
+			<div class="menu">
+			
+<ul>
+	<li>
+		<span id='back-to-search'><img src='/images/gifs/FBLogo_s.gif' alt='Back to search' title='Go back to Search page' height='33px' width='33px' border='0' /></span>
+		&nbsp;
+	</li>
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''">
+		<span class='bigger'><a href='#' class='scalign' title='Information about this page'>About this page</a></span>
+		<ul>
+			<li>
+				<a href='/manual/English/FishBaseThe_Species_Table.htm' title='More Info on species'>More Info</a>
+			</li>
+			<li>
+				<a href='/manual/French/FishBaseNomenclature.htm#00358710' title='Plus d info'>Plus d'info</a>
+			</li>
+			<li>
+				<a href='/manual/Portuguese/Nomenclature.htm#The_Species_table' title='Mais info'>Mais info</a>
+			</li>
+
+		</ul>
+	</li>
+
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''">
+		<span class='bigger'><a href='#' class='scalign' title='Select a language'>Languages</a></span>
+		<ul>
+            <li><a href='../Summary/SpeciesSummary.php?id=239&lang=arabic' title='Arabic'>Arabic</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=bahasa' title='Bahasa/Malay'>Bahasa/Malay</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=bangla' title='Bangla'>Bangla</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=scchinese' title='Chinese (Simplified)'>Chinese(Si)</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=chinese' title='Chinese (Traditional)'>Chinese(Tr)</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=german' title='Deutsch'>Deutsch</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=english' title='English'>English</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=spanish' title='Español'>Español</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=farsi' title='Farsi'>Farsi</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=french' title='Français'>Français</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=greek' title='Greek'>Greek</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=hindi' title='Hindi'>Hindi</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=italian' title='Italiano'>Italiano</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=japanese' title='Japanese'>Japanese</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=laos' title='Lao'>Lao</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=dutch' title='Nederlands'>Nederlands</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=portuguese' title='Português(Br)'>Português(Br)</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=portuguese_po' title='Português(Pt)'>Português(Pt)</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=russian' title='Russian'>Russian</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=swedish' title='Swedish'>Swedish</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=thai' title='Thai'>Thai</a></li>
+			<li><a href='../Summary/SpeciesSummary.php?id=239&lang=vietnamese' title='Vietnamese'>Vietnamese</a></li>
+		</ul>
+
+	</li>
+
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''">
+	<span class='bigger'><a href='#' class='scalign' title='Send us a Feedback'>User feedbacks</a></span>
+		<ul>
+		<li><a href='javascript:document.mailx.submit()' title='Send us your Comments & Corrections'>
+	Comments & Corrections</a></li>
+		<li><a href='http://www.fishbase.us/FBForum/create_topic.php?speccode=239' title='Ask your questions in Fish Forum'>Fish Forum</a></li>
+		<li><a href='http://www.fishbase.us/FBGuestBook/index.php' title='Sign our Guest Book'>Guest Book</a></li>
+		<li><a href='http://www.facebook.com/FishBase'>Facebook</a></li>
+		<!--<li><a href='http://www.fishbase.us/FishWatcher/url_addform.php?speccode=239' title='Attach your web site to this page'>Add your website</a></li>-->
+		</ul>
+	</li>
+
+	<li><span class='bigger'><a href='../summary/citation.php' class='scalign' title='How to cite FishBase'>Citation</a></span>
+	</li>
+
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''">
+	<span class='bigger'><a  href='#' class='scalign' title='Uploads Oncorhynchus mykiss'>Uploads</a></span>
+		<ul>
+		<li><a href='http://www.fishbase.us/FishWatcher/url_addform.php?speccode=239' title='Attach your web site to this page'>Attach website</a></li>
+		<li><a href='http://www.fishbase.us/tools/UploadPhoto/start.php?speccode=239' title='Upload photo -  Oncorhynchus mykiss'>Upload photo</a></li>
+		<li><a href='http://www.fishbase.us/tools/UploadVideo/start_info.php?speccode=239' title='Upload video - Oncorhynchus mykiss'>Upload video</a></li>
+		<li><a href='http://www.fishbase.us/tools/upload-ref/start.php?speccode=239'>Upload references</a></li>
+		<li><a href='http://www.fishbase.us/FishWatcher/checkpassword.php?Genus=Oncorhynchus&Species=mykiss&vtable=contribution_a'>Fish Watcher</a></li>
+	</ul>
+	</li>
+
+	<li onmouseover="this.className='msieFix'" onmouseout="this.className=''"><span class='bigger'>
+	<a  href='#' class='scalign' title='Restricted - Oncorhynchus mykiss'>Related species</a></span>
+		<ul>
+			<li><a style = 'width:155px;' href='../identification/SpeciesList.php?genus=Oncorhynchus' title='Species in Oncorhynchus'>Species in <i>Oncorhynchus</i></a></li>
+			<li><a style = 'width:155px;' href='/identification/specieslist.php?famcode=76&areacode=&spines=&fins=' title='Species in Salmonidae'>Species in <i>Salmonidae</a></i></li>
+			
+				<li style='background: #02CDE5; width:157px; text-align:center;'>- Classification -</li>
+				<li ><a style = 'width:155px; color:#000;' href='#' class='sciname' title='Subfamily'>Salmoninae</a></li>
+			<li><a style = 'width:155px;' href='/summary/FamilySummary.php?ID=76' class='sciname' title='Family'>Salmonidae</a></li>
+			<li><a style = 'width:155px;' href='/summary/OrdersSummary.php?order=Salmoniformes' class='sciname' title='Order'>Salmoniformes</a></li>
+			<li><a style = 'width:155px; color:#000;' href='#' class='sciname' title='Class'>Actinopterygii</a></li>
+			<li><a style = 'width:155px; color:#000;' href='#' class='sciname' title='Phylum'>Chordata</a></li>
+			<li><a style = 'width:155px; color:#000;' href='#' class='sciname' title='Kingdom'>Animalia</a></li>
+		</ul>
+	</li>
+
+
+<li><span style='width:86px' id='search-button' class='scalign'>&nbsp;<img src='/images/png/search-logo.png' height='33px' width='33px' alt='Search' title='Search names' />&nbsp;</span></li></ul>			</div>
+		</div>
+
+
+		<!-- Sci name, Author, FBname section -->
+		<div id="ss-sciname">
+			<h1>
+				<span class="sciname"><b><a href="http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?genid=2724">Oncorhynchus</a> <a href="http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=10653">mykiss</a></b></span><span class='sheader6'>&nbsp; (Walbaum, 1792)</span>			</h1>
+			<span class='sheader2'>
+				Rainbow trout			</span>
+		</div>
+
+		<!-- Map and photo container -->
+
+		
+		<div id="ss-photomap-container">
+							<!-- Aquamaps -->
+				<div id="ss-map">
+					Add your observation in <a href='http://www.fishbase.us/FishWatcher/checkpassword.php?Genus=Oncorhynchus&Species=mykiss&vtable=contribution_a'>Fish Watcher</a><div class="aquamaps"><center>
+	<table border='1' cellpadding='2' cellspacing='0' style='font-size : xx-small; font-family : Arial;' width = '350'>
+	<tr><td align='center'>
+	<a href='#' onmouseover='javascript:document.getElementById(&quot;pix&quot;).src=&quot;/images/aquamaps/native/exp_7_pic_Fis-22919.jpg&quot;'>
+	Native range</a> |
+		<a href='#' onmouseover='javascript:document.getElementById(&quot;pix&quot;).src=&quot;/images/aquamaps/suitable/exp_7_pic_Fis-22919.jpg&quot;'>
+		All suitable habitat</a> |
+		<a href='#' onmouseover='javascript:document.getElementById(&quot;pix&quot;).src=&quot;/images/aquamaps/pointmap/pic_Fis-22919.jpg&quot;'>
+		Point map</a> |
+		<a href='#' onmouseover='javascript:document.getElementById(&quot;pix&quot;).src=&quot;/images/aquamaps/2050/exp_7_pic_Fis-22919.jpg&quot;'>
+		Year 2100</a>				
+	</td></tr><tr><td align='center'>
+	<a target='am_Fis-22919' href='http://www.aquamaps.org/preMap.php?cache=1&SpecID=Fis-22919&expert_id=7'>
+	<img id='pix' src='/images/aquamaps/native/exp_7_pic_Fis-22919.jpg'>
+	</a>
+	</td></tr>
+
+	<tr><td align='center' style='font-size : xx-small;'>
+	</td></tr>
+
+	<tr><td align='left' style='font-size : xx-small;'><font style='font-family : Arial;' >
+			<a target='fb_Fis-22919' href='http://www.fishbase.org/summary/SpeciesSummary.php?genusname=Oncorhynchus&speciesname=mykiss'><i>Oncorhynchus mykiss</i></a> 
+			&nbsp; 
+			<a target='am_org' href='http://www.aquamaps.org'>AquaMaps</a>
+			&nbsp;
+			Data sources: 	<a target='gbif_Fis-22919' href='http://data.gbif.org/occurrences/searchProviders.htm?c[0].s=0&c[0].p=0&c[0].o=Oncorhynchus mykiss&c[1].s=28&c[1].p=0&c[1].o=0'>GBIF</a> 
+							<a target='obis_Fis-22919' href='http://v2.iobis.org/OBISWEB/ObisControllerServlet?category=all&names=data&tableName=0&searchName=Oncorhynchus mykiss&x=27&y=10'>OBIS</a>			
+			</font>
+	</td></tr>				
+	</table></center></div>				</div>
+
+						<!-- Species Photo -->
+						<div id="ss-photo">
+				<span>
+					Upload your <a href='http://www.fishbase.us/tools/UploadPhoto/start.php?speccode=239'>photos</a>&nbsp;and&nbsp;<a href='http://www.fishbase.us/tools/UploadVideo/start_info.php?speccode=239'>videos</a><BR />				</span>
+				<span class="slabel8">
+				<a href='../photos/thumbnailssummary.php?Genus=Oncorhynchus&Species=mykiss'>Pictures</a> | <a href='http://www.fishbase.us/Videos/SpeciesVideos.php?speccode=239'>
+					Videos
+					</a>&nbsp; &nbsp; <a href='../photos/SpeciesStampsList.php?speccode=239'>Stamps, Coins</a> | <a href='http://images.google.com/images?hl=en&q=Oncorhynchus+mykiss&btnG=Search+Images&gbv=2'>Google image</a><div><a style='text-decoration:none;' href='/photos/ThumbnailsSummary.php?Genus=Oncorhynchus&Species=mykiss'><img style='margin-top: 0; margin-bottom: 0;' name='prefimage' src='/images/thumbnails/jpg/tn_Onmyk_f0.jpg' title ='Image of Oncorhynchus mykiss (Rainbow trout)' alt='Image of Oncorhynchus mykiss (Rainbow trout)' border='0' ></a></div><span class='sciname slabel8'>Oncorhynchus mykiss</span><br/><span class='slabel8'>Female
+					picture by
+					<a href='/Collaborators/CollaboratorSummary.php?ID=302'>
+					McDowall, R.M.</a><br />
+					</span><!--<script src="/libs/jquery/jquery.js"></script>-->
+<link rel="stylesheet" href="/css/swipeslider.css">
+<script src="/libs/jquery/swipeslider/swipeslider.min.js"></script>
+<script>
+$(window).load(function() {
+	if($("#ss-photo-full").length > 0){			//the photo is full width
+		$('#image-slider').swipeslider({sliderHeight:'27%', autoPlayTimeout: 8000});
+	}else{
+		$('#image-slider').swipeslider({sliderHeight:'52%', autoPlayTimeout: 8000});
+	}
+});
+</script>
+<style>
+.swipslider{
+	max-width: 310px;
+	margin:	auto;
+}
+
+</style>					<!--<span class='sciname'>
+						Oncorhynchus mykiss					</span>
+					<br/>
+					<span class="slabel8">
+						
+						Picture by
+						<a href='/Collaborators/CollaboratorSummary.php?ID=302'>
+						McDowall, R.M.</a><br />
+											</span>-->
+				</span>
+			</div> <!-- ss-photo -->
+		</div> <!-- ss-photomap-container -->
+
+		<!-- Main Content -->
+		<div id="ss-main">
+			<p> <!-- CLASSIFICATION / NAMES -->
+			<h1 class='slabel sleft bottomBorder'>
+				Classification / Names  				<span class="addLinks"> <!-- not bold -->
+				<span class='slabel1'><a href='/ComNames/CommonNamesList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&StockCode=253' alt='Common names for Oncorhynchus mykiss' title='Common names for Oncorhynchus mykiss' target='_blank'>Common names</a></span> | <span class='slabel1'><a href='../Nomenclature/SynonymsList.php?ID=239&SynCode=22919&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Synonyms for Oncorhynchus mykiss' title='Synonyms for Oncorhynchus mykiss' target='_blank'>Synonyms</a></span> | Catalog of Fishes (<A href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?genid=2724' target='_blank'>gen.</A>, <A href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=10653' target='_blank'>sp.</A>) | <span class='slabel1'><a href='http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=161989' target='_blank'>ITIS</a></span> | <span class='slabel1'><a href='http://www.catalogueoflife.org/col/search/all/key/Oncorhynchus+mykiss/match/1' target='_blank'>CoL</a></span> | <a href='http://www.marinespecies.org/aphia.php?p=taxdetails&id=127185' target='_blank'>WoRMS</a> | <span class='slabel1'><a href='http://www.cloffa.ird.fr/table/taxon2/?idfishbase=239' alt='Cloffa for Oncorhynchus mykiss' title='Cloffa for Oncorhynchus mykiss' target='_blank'>Cloffa</a></span>				</span>
+			</h1>
+				<div class="smallSpace">
+				Actinopterygii (ray-finned fishes) > <span class='slabel1'><a href='/summary/OrdersSummary.php?order=Salmoniformes' alt='Salmoniformes for Oncorhynchus mykiss' title='Salmoniformes for Oncorhynchus mykiss' target='_blank'>Salmoniformes</a></span> (Salmons) > <span class='slabel1'><a href='/summary/FamilySummary.php?ID=76' alt='Salmonidae for Oncorhynchus mykiss' title='Salmonidae for Oncorhynchus mykiss' target='_blank'>Salmonidae</a></span> (Salmonids) > Salmoninae<br/>						<span>
+							Etymology: <span style="font-style: italic;">Oncorhynchus:</span> <span>Greek, onyx, -ychos = nail + Greek, rhyngchos = snout (Ref. <a href='/references/FBRefSummary.php?ID=45335'>45335</a>)</span>;&nbsp;&nbsp;<span style="font-style: italic;">mykiss:</span> <span><i>Oncorhynchus</i>=hooked snout; <i>mykiss</i>=a vernacular name for the species in Kamchatka, Russia (Ref. <a href='/references/FBRefSummary.php?ID=79012'>79012</a>)</span>.						</span>
+					</div>
+			</p>
+			
+			<!-- start Environment / Climate / Range -->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Environment / Climate / Range					<span class="addLinks">
+						<span class='slabel1'><a href='../Ecology/FishEcologySummary.php?StockCode=253&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Ecology for Oncorhynchus mykiss' title='Ecology for Oncorhynchus mykiss' target='_blank'>Ecology</a></span>					</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+					Marine; freshwater; brackish;  benthopelagic; anadromous (Ref. <A href='../references/FBRefSummary.php?ID=51243'>51243</A>); depth range 0 - 200 m (Ref. <A href='../references/FBRefSummary.php?ID=50550'>50550</A>). &nbsp;&nbsp;Subtropical; 10&deg;C - 24&deg;C (Ref. <A href='../references/FBRefSummary.php?ID=12741'>12741</A>), preferred 8&deg;C (Ref. <A href='../references/FBRefSummary.php?ID=107945'>107945</A>); 67&deg;N -   32&deg;N, 135&deg;E -   117&deg;W				</span>
+				</div>
+			</p>
+			
+			<!-- start Distribution -->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Distribution					<span class ='addLinks'>
+					<span class='slabel1'><a href='/Country/CountryList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Countries for Oncorhynchus mykiss' title='Countries for Oncorhynchus mykiss' target='_blank'>Countries</a></span> | <span class='slabel1'><a href='../Country/FaoAreaList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253&Scientific=Oncorhynchus+mykiss' alt='FAO areas for Oncorhynchus mykiss' title='FAO areas for Oncorhynchus mykiss' target='_blank'>FAO areas</a></span> | <span class='slabel1'><a href='../trophiceco/EcosysList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Ecosystems for Oncorhynchus mykiss' title='Ecosystems for Oncorhynchus mykiss' target='_blank'>Ecosystems</a></span> | <span class='slabel1'><a href='../museum/OccurrencesList.php?genus=Oncorhynchus&species=mykiss' alt='Occurrences for Oncorhynchus mykiss' title='Occurrences for Oncorhynchus mykiss' target='_blank'>Occurrences</a></span> | <a href='/map/CRIAMapper/CRIAMapViewer.php?genus=Oncorhynchus&species=mykiss'>Point map</a> | <span class='slabel1'><a href='../Introductions/IntroductionsList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Introductions for Oncorhynchus mykiss' title='Introductions for Oncorhynchus mykiss' target='_blank'>Introductions</a></span> | <span class='slabel1'><a href='http://www.poissons-afrique.ird.fr/faunafri/index.svg?agg=idst&idfb=239' alt='Faunafri for Oncorhynchus mykiss' title='Faunafri for Oncorhynchus mykiss' target='_blank'>Faunafri</a></span>				</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+					Native to Pacific Slope from Kuskokwim River, Alaska to (at least) Rio Santa Domingo, Baja California, Mexico; upper Mackenzie River drainage (Arctic basin), Alberta and British Columbia in Canada; endorheic basins of southern Oregon, USA.  Widely introduced in cold waters elsewhere in North America and rest of the world (Ref. <a href='../references/FBRefSummary.php?ID=5723'>5723</a>).  Eastern Pacific:  Kamchatkan Peninsula and have been recorded from the Commander Islands east of Kamchatka and sporadically in the Sea of Okhotsk as far south as the mouth of the Amur River along the mainland.  The records outside Kamchatka probably represent migrating or straying Kamchatkan steelhead (<i>penshinensis</i>) rather than the established native population (Reg.  50080). Several countries report adverse ecological impact after introduction.<BR />				</span>
+				</div>
+			</p>
+
+			<p><!-- start Length at First Maturity/Size/Weight/Age -->
+				<h1 class='slabel bottomBorder'>
+					Length at first maturity / Size / Weight / Age<br />				</h1>
+				<div class="smallSpace">
+				<span>
+					Maturity: L<sub>m</sub>&nbsp<a href=../Reproduction/MaturityList.php?ID=239>?</a>&nbsp range ? - ? cm<BR /> Max length : 122 cm TL male/unsexed; (Ref. <A href='../references/FBRefSummary.php?ID=96339'>96339</A>); common length : 60.0 cm TL male/unsexed; (Ref. <A href='../references/FBRefSummary.php?ID=5504'>5504</A>); max. published weight: 25.4 kg (Ref. <A href='../references/FBRefSummary.php?ID=7251'>7251</A>); max. reported age: 11 years (Ref. <A href='../references/FBRefSummary.php?ID=12193'>12193</A>)				</span>
+				</div>
+			</p>
+
+			<!-- start Morphology -->
+						<p>
+				<h1 class='slabel bottomBorder'>
+					Short description					<span class="addLinks">
+					<span class='slabel1'><a href='../physiology/MorphDataList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Morphology for Oncorhynchus mykiss' title='Morphology for Oncorhynchus mykiss' target='_blank'>Morphology</a></span> | <span class='slabel1'><a href='../physiology/MorphMetList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Morphometrics for Oncorhynchus mykiss' title='Morphometrics for Oncorhynchus mykiss' target='_blank'>Morphometrics</a></span>					</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+					
+				<a href=../Glossary/Glossary.php?q=dorsal%20fin&language=english&sc=is >Dorsal</a>
+				<a href=../Glossary/Glossary.php?q=spine&language=english&sc=is >spines</a>
+				(total): 0;
+					<a href=../Glossary/Glossary.php?q=dorsal%20fin&language=english&sc=is >Dorsal</a>
+					<a href=../Glossary/Glossary.php?q=soft%20ray&language=english&sc=is >soft rays</a>
+					(total): 10-12;
+				<a href=../Glossary/Glossary.php?q=anal%20fin&language=english&sc=is >Anal</a>
+				<a href=../Glossary/Glossary.php?q=spine&language=english&sc=is >spines</a>: 0;
+					<a href=../Glossary/Glossary.php?q=anal%20fin&language=english&sc=is >Anal</a>
+					<a href=../Glossary/Glossary.php?q=soft%20ray&language=english&sc=is >soft rays</a>: 8 - 12;
+				<a href=../Glossary/Glossary.php?q=vertebrae&language=english&sc=is >Vertebrae</a>: 60 - 66. Body elongate, somewhat compressed especially in larger fish.  No nuptial tubercles but minor changes to head, mouth and color occur especially in spawning males.  Coloration varies with habitat, size, and sexual condition.  Stream residents and spawners darker, colors more intense.  Lake residents lighter, brighter, and more silvery.  Caudal fin with 19 rays (Ref. <a href='../references/FBRefSummary.php?ID=2196'>2196</a>).  Differs from <i>Oncorhynchus gorbuscha</i> by having the following unique characters:  by having the following unique characters:  anal fin with 6-9½  (usually 8½ ) branched rays; 115-130 scales in midlateral row; 16-17 gill rakers; breeding males lacking hump; juveniles lacking parr marks; wide pink to red stripe from head to caudal base, except in sea-run form; and juveniles with 5-10 parr marks (Ref. <a href='../references/FBRefSummary.php?ID=59043'>59043</a>).				</span>
+				</div>
+			</p>
+			
+			<!-- Start Biology -->
+			<p>
+			<form action='/Glossary/Glossary.php' method='get'>
+			<div class='sleft'>
+				<h1 class='slabel bottomBorder'>
+					Biology					<span class="floatRight">
+						<span class='uploads'>
+				&nbsp;&nbsp;&nbsp;
+				Glossary
+				<input  type='text' name='q' id='q' size='10' maxlength='25' />
+				</span>
+				<span class='submit slabel6'>
+				<input  type='submit' value='Search'> (e.g.  epibenthic)
+				</span>
+			<BR />					</span>
+				</h1>
+			</div>
+
+			</form>
+			<div class="smallSpace">
+			<span>
+				Adults inhabit cold headwaters, creeks, small to large rivers, and lakes.  Anadromous in coastal streams (Ref. <a href='../references/FBRefSummary.php?ID=5723'>5723</a>).  Stocked in almost all water bodies as lakes, rivers and streams, usually not stocked in water reaching summer temperatures above 25°C or ponds with very low oxygen concentrations.  Feed on a variety of aquatic and terrestrial invertebrates and small fishes. At the sea, they prey on fish and cephalopods.  Mature individuals undertake short spawning migrations.  Anadromous and lake forms may migrate long distances to spawning streams (Ref. <a href='../references/FBRefSummary.php?ID=59043'>59043</a>). Utilized fresh, smoked, canned, and frozen; eaten steamed, fried, broiled, boiled, microwaved and baked (Ref. <a href='../references/FBRefSummary.php?ID=9988'>9988</a>).  Cultured in many countries and is often hatched and stocked into rivers and lakes especially to attract recreational fishers (Ref. <a href='../references/FBRefSummary.php?ID=9988'>9988</a>).			</span>
+			</div>
+			</p>
+
+			<!-- start Reproduction -->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Life cycle and mating behavior					<span class ='addLinks'>
+					<span class='slabel1'><a href='/Reproduction/MaturityList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76' alt='Maturity for Oncorhynchus mykiss' title='Maturity for Oncorhynchus mykiss' target='_blank'>Maturity</a></span> | <span class='slabel1'><a href='../Reproduction/FishReproSummary.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Reproduction for Oncorhynchus mykiss' title='Reproduction for Oncorhynchus mykiss' target='_blank'>Reproduction</a></span> | <span class='slabel1'><a href='/Reproduction/SpawningList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Spawning for Oncorhynchus mykiss' title='Spawning for Oncorhynchus mykiss' target='_blank'>Spawning</a></span> | <span class='slabel1'><a href='../Reproduction/FishEggInfoSummary.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Eggs for Oncorhynchus mykiss' title='Eggs for Oncorhynchus mykiss' target='_blank'>Eggs</a></span> | <span class='slabel1'><a href='/Reproduction/FecundityList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Fecundity for Oncorhynchus mykiss' title='Fecundity for Oncorhynchus mykiss' target='_blank'>Fecundity</a></span> | <span class='slabel1'><a href='../larvalbase/Reproduction/LarvaeInfoList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&stockcode=253' alt='Larvae for Oncorhynchus mykiss' title='Larvae for Oncorhynchus mykiss' target='_blank'>Larvae</a></span>				</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+				Reported not to establish breeding populations if the peak emergence of fry corresponds to flood season and cold summer temperatures and if temperature does not fall below 13° C (Ref. <a href='../references/FBRefSummary.php?ID=59043'>59043</a>).  Males mature generally at 2 years and females at 3.  Spawning happens from November until May in the Northern hemisphere and from August to November on the Southern hemisphere.  The size of the eggs depends on the size of the female.  In captivity spawning is fostered by abdominal massage.  Egg size 3-6 mm,  fry length after hatching 12-20 mm. Hatchlings are well developed and equipped with a large yolk sac.      
+The female finds a spot and digs a pit.  While digging, an attendant male courts her or is busy driving away other males.  As soon as the pit is completed, the female drops into it and is immediately followed by the male.  The pair is side by side, they open their mouth, quiver and release egg and sperm.  Females produce from 700 to 4,000 eggs per spawning event (Ref. <a href='../references/FBRefSummary.php?ID=4706'>4706</a>).  At this point, a subordinate male moves in and releases sperm into the nest.  The female quickly moves to the upstream edge of the nest and starts digging a new pit, covering the eggs.  The whole process is repeated for several days until the female deposits all her eggs (Ref. <a href='../references/FBRefSummary.php?ID=27547'>27547</a>).  Young fish move downstream at night, shortly after emergence (Ref. <a href='../references/FBRefSummary.php?ID=4706'>4706</a>).  
+Reproductive strategy: synchronous ovarian organization, determinate fecundity (Ref. <a href='../references/FBRefSummary.php?ID=51846'>51846</a>).				</span>
+				</div>
+			</p>
+
+
+
+			<p> <!-- Main Reference -->
+				<h1 class='slabel bottomBorder'>
+					Main reference  					<span class='slabel1 addLinks'>
+						<span class='slabel1'><a href='http://www.fishbase.us/tools/upload-ref/start.php?speccode=239' alt='Upload your references for Oncorhynchus mykiss' title='Upload your references for Oncorhynchus mykiss' target='_blank'>Upload your references</a></span> | <span class='slabel1'><a href='/References/SummaryRefList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='References for Oncorhynchus mykiss' title='References for Oncorhynchus mykiss' target='_blank'>References</a></span> | <span style="color:gray;">Coordinator</span> | <span class='slabel1'><a href='/Collaborators/CollaboratorsList.php?ID=239&Genus=Oncorhynchus&Species=mykiss' alt='Collaborators for Oncorhynchus mykiss' title='Collaborators for Oncorhynchus mykiss' target='_blank'>Collaborators</a></span><BR />					</span>
+				</h1>
+				<div class="smallSpace">
+				<span>
+					<b>Gall, G.A.E. and P.A. Crandell</b>, 1992. The rainbow trout. Aquaculture 100:1-10. (Ref. <A href='../references/FBRefSummary.php?ID=4706'>4706</A>)<BR />				</span>
+				</div>
+			</p>
+
+			<!-- Start IUCN redlist status -->
+			<p>
+			<div class='sleft sonehalf'>
+				<h1 class='slabel bottomBorder'>
+					IUCN Red List Status   (Ref. <A href='../references/FBRefSummary.php?ID=109396'>109396</A>)<BR />				</h1>
+				<div class="smallSpace">
+				<span>
+					<span class='box' style='background-color:#ffffff'>&nbsp;</span>&nbsp;<span class=&quot;black&quot;><a href=http://www.iucnredlist.org/news/iucn-red-list-site-made-easy-guide>Not Evaluated</a></span>&nbsp;				</span>
+				</div>
+			</div>
+
+			<!-- CITES  -->
+			<div class='sonehalf'>
+				<h1 class='slabel bottomBorder'>
+					CITES   (Ref. <A href='../references/FBRefSummary.php?ID=94142'>94142</A>)<BR />
+				</h1>
+				<div class="smallSpace">
+				<span>
+					Not Evaluated				</span>
+				</div>
+			</div>
+
+			<!-- Threat to humans -->
+			<div class='rlalign sonehalf'>
+				<h1 class='slabel bottomBorder'>
+					Threat to humans  <BR />				</h1>
+				<div class="smallSpace">
+				<span>
+					<span class='box' style='background-color:#ffff00'>&nbsp;</span> Potential pest				</span>
+				</div>
+			</div>
+			</p>
+			<br/><br/><br/>
+			<!-- Start human uses-->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Human uses  				</h1>
+				<div class="smallSpace">
+				<span>
+					Fisheries: highly commercial; aquaculture: commercial; gamefish: yes				</span>
+				</div>
+
+				<div class="smallSpace">
+				<span>
+					FAO(Aquaculture: <a href='../report/FAO/FAOAquacultureList.php?scientific=Oncorhynchus+mykiss' title='FAO Aquaculture Production'>production</a>, <a href='http://www.fao.org/fishery/culturedspecies/Oncorhynchus_mykiss/en' title='FAO Cultured Aquatic species fact sheets' target='_blank'>species profile</a>; fisheries: <a href='../report/FAO/FAOCatchList.php?scientific=Oncorhynchus+mykiss' title='FAO Capture Production'>production</a>; publication : <a href='http://www.fao.org/fishery/publications/query/Oncorhynchus mykiss,Rainbow trout*,Truite arc-en-ciel*' title='FAO publications' target='_blank'>search</a>)  | <a href='http://www.fisherieswiki.org/fishbase_query?genus=Oncorhynchus&specific_descriptor=mykiss' target='_blank' title='Information for Oncorhynchus mykiss fisheries on FisheriesWiki'>FisheriesWiki</a> | <span class='slabel1'><a href='http://www.seaaroundus.org/data/#/taxa/600239' target='_blank'>Sea Around Us</a></span>				</span>
+				</div>
+			</p>
+			<!-- Start CITES -->
+						<!-- start More Information -->
+			<div id='ss-moreinfo-container'>
+				<p>
+					<h1 class='slabel bottomBorder'>
+						More information					</h1>
+					<!-- start More Information 1st column -->
+					<div class='ss-moreinfo'>
+						<span class='slabel1'><a href='/Country/CountryList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Countries for Oncorhynchus mykiss' title='Countries for Oncorhynchus mykiss' target='_blank'>Countries</a></span><BR /><span class='slabel1'><a href='../Country/FaoAreaList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253&Scientific=Oncorhynchus+mykiss' alt='FAO areas for Oncorhynchus mykiss' title='FAO areas for Oncorhynchus mykiss' target='_blank'>FAO areas</a></span><BR /><span class='slabel1'><a href='../trophiceco/EcosysList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Ecosystems for Oncorhynchus mykiss' title='Ecosystems for Oncorhynchus mykiss' target='_blank'>Ecosystems</a></span><BR /><span class='slabel1'><a href='../museum/OccurrencesList.php?genus=Oncorhynchus&species=mykiss' alt='Occurrences for Oncorhynchus mykiss' title='Occurrences for Oncorhynchus mykiss' target='_blank'>Occurrences</a></span><BR /><span class='slabel1'><a href='../Introductions/IntroductionsList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Introductions for Oncorhynchus mykiss' title='Introductions for Oncorhynchus mykiss' target='_blank'>Introductions</a></span><BR /><span class='slabel1' style='color:gray;'>Stocks</span><BR /><span class='slabel1'><a href='../Ecology/FishEcologySummary.php?StockCode=253&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Ecology for Oncorhynchus mykiss' title='Ecology for Oncorhynchus mykiss' target='_blank'>Ecology</a></span><BR /><span class='slabel1'><a href='/TrophicEco/DietCompoList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Diet for Oncorhynchus mykiss' title='Diet for Oncorhynchus mykiss' target='_blank'>Diet</a></span><BR /><span class='slabel1'><a href='../TrophicEco/FoodItemsList.php?vstockcode=253&genus=Oncorhynchus&species=mykiss' alt='Food items for Oncorhynchus mykiss' title='Food items for Oncorhynchus mykiss' target='_blank'>Food items</a></span><BR /><span class='slabel1' style='color:gray;'>Food consumption</span><BR /><span class='slabel1' style='color:gray;'>Ration</span><BR />					</div>
+					<!-- start More Information 2nd column -->
+					<div class='ss-moreinfo'>
+						<span class='slabel1'><a href='/ComNames/CommonNamesList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&StockCode=253' alt='Common names for Oncorhynchus mykiss' title='Common names for Oncorhynchus mykiss' target='_blank'>Common names</a></span><BR /><span class='slabel1'><a href='../Nomenclature/SynonymsList.php?ID=239&SynCode=22919&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Synonyms for Oncorhynchus mykiss' title='Synonyms for Oncorhynchus mykiss' target='_blank'>Synonyms</a></span><BR /><span class='slabel1'><a href='../physiology/OxygenDataList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Metabolism for Oncorhynchus mykiss' title='Metabolism for Oncorhynchus mykiss' target='_blank'>Metabolism</a></span><BR /><span class='slabel1'><a href='../TrophicEco/PredatorList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Predators for Oncorhynchus mykiss' title='Predators for Oncorhynchus mykiss' target='_blank'>Predators</a></span><BR /><span class='slabel1'><a href='../Physiology/CL50List.php?ID=239' alt='Ecotoxicology for Oncorhynchus mykiss' title='Ecotoxicology for Oncorhynchus mykiss' target='_blank'>Ecotoxicology</a></span><BR /><span class='slabel1'><a href='../Reproduction/FishReproSummary.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Reproduction for Oncorhynchus mykiss' title='Reproduction for Oncorhynchus mykiss' target='_blank'>Reproduction</a></span><BR /><span class='slabel1'><a href='/Reproduction/MaturityList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76' alt='Maturity for Oncorhynchus mykiss' title='Maturity for Oncorhynchus mykiss' target='_blank'>Maturity</a></span><BR /><span class='slabel1'><a href='/Reproduction/SpawningList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Spawning for Oncorhynchus mykiss' title='Spawning for Oncorhynchus mykiss' target='_blank'>Spawning</a></span><BR /><span class='slabel1'><a href='/Reproduction/FecundityList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Fecundity for Oncorhynchus mykiss' title='Fecundity for Oncorhynchus mykiss' target='_blank'>Fecundity</a></span><BR /><span class='slabel1'><a href='../Reproduction/FishEggInfoSummary.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Eggs for Oncorhynchus mykiss' title='Eggs for Oncorhynchus mykiss' target='_blank'>Eggs</a></span><BR /><span class='slabel1' style='color:gray;'>Egg development</span><BR />					</div>
+					<!-- start More Information 3rd column -->
+					<div class='ss-moreinfo'>
+						<span class='slabel1'><a href='/popdyn/PopCharList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76' alt='Age/Size for Oncorhynchus mykiss' title='Age/Size for Oncorhynchus mykiss' target='_blank'>Age/Size</a></span><BR /><span class='slabel1'><a href='/popdyn/PopGrowthList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76' alt='Growth for Oncorhynchus mykiss' title='Growth for Oncorhynchus mykiss' target='_blank'>Growth</a></span><BR /><span class='slabel1'><a href='/popdyn/LWRelationshipList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76' alt='Length-weight for Oncorhynchus mykiss' title='Length-weight for Oncorhynchus mykiss' target='_blank'>Length-weight</a></span><BR /><span class='slabel1'><a href='../popdyn/LLRelationshipList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76' alt='Length-length for Oncorhynchus mykiss' title='Length-length for Oncorhynchus mykiss' target='_blank'>Length-length</a></span><BR /><span class='slabel1' style='color:gray;'>Length-frequencies</span><BR /><span class='slabel1'><a href='../physiology/MorphMetList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Morphometrics for Oncorhynchus mykiss' title='Morphometrics for Oncorhynchus mykiss' target='_blank'>Morphometrics</a></span><BR /><span class='slabel1'><a href='../physiology/MorphDataList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Morphology for Oncorhynchus mykiss' title='Morphology for Oncorhynchus mykiss' target='_blank'>Morphology</a></span><BR /><span class='slabel1'><a href='../larvalbase/Reproduction/LarvaeInfoList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&stockcode=253' alt='Larvae for Oncorhynchus mykiss' title='Larvae for Oncorhynchus mykiss' target='_blank'>Larvae</a></span><BR /><span class='slabel1' style='color:gray;'>Larval dynamics</span><BR /><span class='slabel1'><a href='/Recruitment/RecruitmentList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Recruitment for Oncorhynchus mykiss' title='Recruitment for Oncorhynchus mykiss' target='_blank'>Recruitment</a></span><BR /><span class='slabel1' style='color:gray;'>Abundance</span><BR />					</div>
+					<!-- start More Information 4th column -->
+					<div class='ss-moreinfo'>
+						<span class='slabel1'><a href='/References/SummaryRefList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='References for Oncorhynchus mykiss' title='References for Oncorhynchus mykiss' target='_blank'>References</a></span><BR /><span class='slabel1' style='color:gray;'>Aquaculture</span><BR /><span class='slabel1' style='color:gray;'>Aquaculture profile</span><BR /><span class='slabel1' style='color:gray;'>Strains</span><BR /><span class='slabel1'><a href='../Genetics/FishGeneticsList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Genetics for Oncorhynchus mykiss' title='Genetics for Oncorhynchus mykiss' target='_blank'>Genetics</a></span><BR /><span class='slabel1'><a href='../Genetics/FishElecStudiesList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Allele frequencies for Oncorhynchus mykiss' title='Allele frequencies for Oncorhynchus mykiss' target='_blank'>Allele frequencies</a></span><BR /><span class='slabel1'><a href='../Genetics/PopCharList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Heritability for Oncorhynchus mykiss' title='Heritability for Oncorhynchus mykiss' target='_blank'>Heritability</a></span><BR /><span class='slabel1'><a href='../Diseases/DiseasesList.php?ID=239&StockCode=253' alt='Diseases for Oncorhynchus mykiss' title='Diseases for Oncorhynchus mykiss' target='_blank'>Diseases</a></span><BR /><span class='slabel1'><a href='../Aquaculture/ProcessingList.php?speccode=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Processing for Oncorhynchus mykiss' title='Processing for Oncorhynchus mykiss' target='_blank'>Processing</a></span><BR /><span class='slabel1'><a href='../summary/biomass.php?id=239' alt='Mass conversion for Oncorhynchus mykiss' title='Mass conversion for Oncorhynchus mykiss' target='_blank'>Mass conversion</a></span><BR />					</div>
+					<!-- start More Information 5th column -->
+					<div >
+						<span class='slabel1'><a href='/Collaborators/CollaboratorsList.php?ID=239&Genus=Oncorhynchus&Species=mykiss' alt='Collaborators for Oncorhynchus mykiss' title='Collaborators for Oncorhynchus mykiss' target='_blank'>Collaborators</a></span><BR /><span class='slabel1'><a href='../photos/thumbnailssummary.php?Genus=Oncorhynchus&Species=mykiss' alt='Pictures for Oncorhynchus mykiss' title='Pictures for Oncorhynchus mykiss' target='_blank'>Pictures</a></span><BR /><span class='slabel1'><a href='../photos/SpeciesStampsList.php?speccode=239' alt='Stamps, Coins for Oncorhynchus mykiss' title='Stamps, Coins for Oncorhynchus mykiss' target='_blank'>Stamps, Coins</a></span><BR /><span class='slabel1' style='color:gray;'>Sounds</span><BR /><span class='slabel1' style='color:gray;'>Ciguatera</span><BR /><span class='slabel1'><a href='../Physiology/SpeedList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Speed for Oncorhynchus mykiss' title='Speed for Oncorhynchus mykiss' target='_blank'>Speed</a></span><BR /><span class='slabel1'><a href='../physiology/SwimModeList.php?ID=239' alt='Swim. type for Oncorhynchus mykiss' title='Swim. type for Oncorhynchus mykiss' target='_blank'>Swim. type</a></span><BR /><span class='slabel1'><a href='../physiology/GillAreaDataList.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&fc=76&StockCode=253' alt='Gill area for Oncorhynchus mykiss' title='Gill area for Oncorhynchus mykiss' target='_blank'>Gill area</a></span><BR /><span class='slabel1' style='color:gray;'>Otoliths</span><BR /><span class='slabel1' style='color:gray;'>Brains</span><BR /><span class='slabel1' style='color:gray;'>Vision</span><BR />					</div>
+				</p>
+			</div>
+			<!-- start Tools -->
+			<p>
+				<h1 class='slabel bottomBorder fontSize10'>Tools<BR /></h1>
+				<div class="smallSpace">
+				<span>
+					<span class='slabel1'><a href='../FBQuiz/QuizBiodiv_main.php?speccode=239' alt='Bio-Quiz for Oncorhynchus mykiss' title='Bio-Quiz for Oncorhynchus mykiss' target='_blank'>Bio-Quiz</a></span> | <span class='slabel1'><a href='../FieldGuide/FieldGuideSummary.php?GenusName=Oncorhynchus&SpeciesName=mykiss&pda=&sps=' alt='E-book for Oncorhynchus mykiss' title='E-book for Oncorhynchus mykiss' target='_blank'>E-book</a></span> | <span class='slabel1'><a href='../FieldGuide/FieldGuideSummary.php?GenusName=Oncorhynchus&SpeciesName=mykiss&sps=&print=' alt='Field guide for Oncorhynchus mykiss' title='Field guide for Oncorhynchus mykiss' target='_blank'>Field guide</a></span> | <span class='slabel1'><a href='../Keys/ListIDKeys.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss' alt='Identification keys for Oncorhynchus mykiss' title='Identification keys for Oncorhynchus mykiss' target='_blank'>Identification keys</a></span> | <span class='slabel1'><a href='../report/LFAnalysis_step01.php?speccode=239' alt='Length-frequency wizard for Oncorhynchus mykiss' title='Length-frequency wizard for Oncorhynchus mykiss' target='_blank'>Length-frequency wizard</a></span> | <span class='slabel1'><a href='/popdyn/KeyfactsSummary_1.php?ID=239&GenusName=Oncorhynchus&SpeciesName=mykiss&vStockCode=253&fc=76' alt='Life-history tool for Oncorhynchus mykiss' title='Life-history tool for Oncorhynchus mykiss' target='_blank'>Life-history tool</a></span> | <span class='slabel1'><a href='../Map/OccurrenceMapList.php?genus=Oncorhynchus&species=mykiss' alt='Point map for Oncorhynchus mykiss' title='Point map for Oncorhynchus mykiss' target='_blank'>Point map</a></span> | 						<a href="/tools/Classification/ClassificationTree.php?genus=Oncorhynchus&species=mykiss#Oncorhynchusmykiss">Classification Tree</a>
+						 | <span class='slabel1'><a href='http://www.fishbase.us/CatchMSY/intro.php?genus=Oncorhynchus&species=mykiss' alt='Catch-MSY for Oncorhynchus mykiss' title='Catch-MSY for Oncorhynchus mykiss' target='_blank'>Catch-MSY</a></span> | 				</span>
+				</div>
+			</p>
+			<!-- start Special reports -->
+			<p>
+				<h1 class='slabel bottomBorder fontSize10'>Special reports<BR /> </h1>
+				<div class="smallSpace">
+				<span>
+					<span class='slabel1'><a href='/Aquaculture/AquamaintList.php?speccode=239&fbx=&rde=' alt='Check for Aquarium maintenance for Oncorhynchus mykiss' title='Check for Aquarium maintenance for Oncorhynchus mykiss' target='_blank'>Check for Aquarium maintenance</a></span> | <span class='slabel1'><a href='/summary/FactSheetList.php?speccode=239&src=1' alt='Check for Species Fact Sheets for Oncorhynchus mykiss' title='Check for Species Fact Sheets for Oncorhynchus mykiss' target='_blank'>Check for Species Fact Sheets</a></span> | <span class='slabel1'><a href='/summary/FactSheetList.php?speccode=239&src=2' alt='Check for Aquaculture Fact Sheets for Oncorhynchus mykiss' title='Check for Aquaculture Fact Sheets for Oncorhynchus mykiss' target='_blank'>Check for Aquaculture Fact Sheets</a></span>				</span>
+				</div>
+			</p>
+			<!-- Start Download Zone / Download XML : Kit Elloran -->
+			<p>
+				<h1 class='slabel bottomBorder'>Download XML<BR /></h1>
+				<div class="smallSpace">
+				<span>
+					<span class='slabel1'><a href='http://www.fishbase.us/webservice/summary/fb/showXML.php?identifier=FB-239&ProviderDbase=03' alt='Summary page for Oncorhynchus mykiss' title='Summary page for Oncorhynchus mykiss' target='_blank'>Summary page</a></span> | <span class='slabel1'><a href='../webservice/Occurrence/PointData.php?Genus=Oncorhynchus&Species=mykiss' alt='Point data for Oncorhynchus mykiss' title='Point data for Oncorhynchus mykiss' target='_blank'>Point data</a></span> | <span class='slabel1'><a href='../webservice/ComNames/comnamesxml.php?Genus=Oncorhynchus&Species=mykiss' alt='Common names for Oncorhynchus mykiss' title='Common names for Oncorhynchus mykiss' target='_blank'>Common names</a></span> | <span class='slabel1'><a href='../webservice/photos/FishPicsList.php?Genus=Oncorhynchus&Species=mykiss&type=' alt='Photos for Oncorhynchus mykiss' title='Photos for Oncorhynchus mykiss' target='_blank'>Photos</a></span>				</span>
+				</div>
+			</p>
+			<!-- start Internet Sources -->
+			<p>
+				<h1 class='slabel bottomBorder fontSize10'>
+					Internet sources<BR />				</h1>
+				<div class="smallSpace">
+				<span>
+					<span class='slabel1'><a href='../Database/AlienInvasiveList.php?ID=239' target='_blank'>Alien/Invasive Species database</a></span> | <span class='slabel1'><a href='http://www.biodiversitylibrary.org/name/Oncorhynchus+mykiss' target='_blank'>BHL</a></span> | <span class='slabel1'><a href='http://www.cloffa.ird.fr/table/taxon2/?idfishbase=239' target='_blank'>Cloffa</a></span> | <span class='slabel1'><a href='http://www.barcodinglife.org/views/taxbrowser.php?taxon=Oncorhynchus+mykiss' target='_blank'>BOLDSystems</a></span> | <span class='slabel1'><a href='http://www.fishbase.us/FishWatcher/SpeciesURLList.php?speccode=239' target='_blank'>Websites from users</a></span> | <span class='slabel1'><a href='http://www.fishbase.us/FishWatcher/CollectionsList.php?speccode=239&what=Species' target='_blank'>Check FishWatcher</a></span> | <span class='slabel1'><a href='http://cat.cisti.nrc.ca/search/Y?SEARCH=Oncorhynchus+mykiss' target='_blank'>CISTI</a></span> | <a href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp' target='_blank'>Catalog of Fishes </a>(<A href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?genid=2724' target='_blank'>gen.</A>, <A href='http://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=10653' target='_blank'>sp.</A>) | <span class='slabel1'><a href='http://www.discoverlife.org/20/q?search=Oncorhynchus+mykiss&b=FB239' target='_blank'>DiscoverLife</a></span> | <a href="http://doris.ffessm.fr/fiche2.asp?fiche_numero=2308" target="_blank">DORIS</a> | <span class='slabel1'><a href='#' onClick='javascript:document.forms.fn_ecotox.submit()'>ECOTOX</a></span> | <span class='slabel1'><a href='http://www.poissons-afrique.ird.fr/faunafri/index.svg?agg=idst&idfb=239' target='_blank'>Faunafri</a></span> | <span class='slabel1'>Fishtrace</span> |  GenBank(<span class='slabel1'><a href='http://www.ncbi.nlm.nih.gov/genome/?term=Oncorhynchus+mykiss%5Borgn%5D&report=docsum' target='_blank'>genome</a></span>, <span class='slabel1'><a href='http://www.ncbi.nlm.nih.gov/nuccore/?term=Oncorhynchus+mykiss%5Borgn%5D&report=docsum' target='_blank'>nucleotide</a></span>) | <span class='slabel1'><a href='#' onClick='javascript:document.forms.fn_gobase.submit()'>GOBASE</a></span> | <span class='slabel1'><a href='http://books.google.com/books?ie=UTF-8&q=%22Oncorhynchus+mykiss%22 OR %22Rainbow+trout%22&btnG=Search' target='_blank'>Google Books</a></span> | <span class='slabel1'><a href='http://scholar.google.com/scholar?q=%22Oncorhynchus+mykiss%22 OR %22Rainbow+trout%22&ie=UTF-8&oe=UTF-8&hl=en&btnG=Search' target='_blank'>Google Scholar</a></span> | <span class='slabel1'><a href='http://www.google.com/search?q=%22Oncorhynchus+mykiss%22+%22Rainbow+trout%22&time=7&x=44&y=7' target='_blank'>Google</a></span> | <a href="http://igfa.org/Records/Fish-Records.aspx?Fish=Trout, rainbow&LC=ATR">IGFA World Record</a> | <span class='slabel1'><a href='../Topic/NatDBaseList.php?ID=239&fbGenus=Oncorhynchus&fbSpecies=mykiss&LDB=' target='_blank'>National databases</a></span> | <a href='http://oto.biodiv.tw/eng/showmulti.php?sc=Oncorhynchus+mykiss' target='_blank'>Otolith Atlas of Taiwan Fishes</a> | <span class='slabel1'><a href='../report/ShowAquariumList.php?speccode=239' target='_blank'>Public aquariums</a></span> | <span class='slabel1'><a href='http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?CMD=search&DB=pubmed&term=Oncorhynchus+mykiss' target='_blank'>PubMed</a></span> | <span class='slabel1'><a href='http://www.cfsan.fda.gov/~frf/rfe0st.html' target='_blank'>RFE Identification</a></span> | <span class='slabel1'><a href='http://www.scirus.com/search_simple/?frm=simple&query_1=%22Oncorhynchus+mykiss%22+%22Rainbow trout%22&wordtype_1=all&dsweb=on&dsmem=on&hits=10' target='_blank'>Scirus</a></span> | <span class='slabel1'><a href='HTTP://www.sealifebase.org/NomenClature/ScientificNameSearchList.php?crit1_fieldname=SYNONYMS.SynGenus&crit1_fieldtype=CHAR&crit2_fieldname=SYNONYMS.SynSpecies&crit2_fieldtype=CHAR&crit1_operator=EQUAL&crit2_operator=EQUAL&crit1_value=Oncorhynchus&crit2_value=mykiss' target='_blank'>SeaLifeBase</a></span> | <span class='slabel1'><a href='http://tolweb.org/tree?group=' target='_blank'>Tree of Life</a></span> | Wikipedia(<span class='slabel1'><a href='http://en.wikipedia.org/wiki/Special:Search?search=Oncorhynchus+mykiss&go=Go' target='_blank'>Go</a></span>, <span class='slabel1'><a href='http://en.wikipedia.org/wiki/Special:Search?search=Oncorhynchus+mykiss&fulltext=Search' target='_blank'>Search</a></span>) | <a href="http://www.fishing-worldrecords.com/scientificname/Oncorhynchus mykiss/show">World Records Freshwater Fishing</a> | <span class='slabel1'><a href='http://www.organismnames.com/query.htm?q=Oncorhynchus+mykiss&Submit.x=20&Submit.y=7&searchType=simple&so=a0' target='_blank'>Zoological Record</a></span>				</span>
+				</div>
+			</p>
+			<!-- Estimation -->
+			<p>
+				<h1 class='slabel bottomBorder'>
+					Estimates of some properties based on models				</h1>
+
+				<div class="smallSpace">
+				<!-- Start Phylogentic (added by Stacy 120909)-->
+					<div class="smallSpace">
+					Phylogenetic diversity index  (Ref. <a href='../references/FBRefSummary.php?ID=82805'>82805</a>):&nbsp;&nbsp;PD<sub>50</sub> = 0.5000&nbsp;&nbsp; [Uniqueness, from 0.5 = low to 2.0 = high].					</div>
+                <!-- Start Beyesian length-weight -->
+                    					<div class="smallSpace">
+													Bayesian length-weight: a=0.00955 (0.00737 - 0.01237), b=3.03 (2.98 - 3.08), based on LWR estimates for this species (Ref. <A href='../references/FBRefSummary.php?ID=93245'>93245</A>).						
+					</div>
+                    				<!-- Start Trophic Level -->
+					<div class="smallSpace">
+					Trophic Level  (Ref. <a 	href='../manual/English/fishbasetrophic_ecology00002692.htm'>69278</a>):&nbsp;&nbsp;4.1 &nbsp; &plusmn;0.3 se; Based on diet studies.					</div>
+				<!-- Start resilience-->
+					<div class="smallSpace">
+					Resilience  (Ref. <a href='http://www.fishbase.us/manual/English/key%20facts.htm#resilience'>69278</a>):&nbsp;&nbsp;Medium, minimum population doubling time 1.4 - 4.4 years (K=0.38-0.46; tm=2-5; tmax=11; Fec=200).					</div>
+				<!-- Start Prior r -->
+					<div class="smallSpace">
+						Prior r = 0.46, 2 SD range = 0.2 - 1.07, log(r) = -0.78, SD log(r) = 0.42, Based on:  1 K, 9 tgen, 1 tmax, 3 Fec records					</div>
+				<!-- Start vulnerability-->
+					<div class="smallSpace">
+					Vulnerability  (Ref. <A href='../references/FBRefSummary.php?ID=59153'>59153</A>):&nbsp;&nbsp;Moderate vulnerability (36 of 100) .					</div>
+				<!-- Start price-->
+										<span id="pricecateg" >
+					<div class="smallSpace">
+											Price category  (Ref. <A href='../references/FBRefSummary.php?ID=80766'>80766</A>):&nbsp;&nbsp;						<a href="#price" onclick="getDetails('../includes/ajax/price.js.php?id=239', 'pricecateg');return false;">Low</a>.
+					
+										</span>
+						</div>
+					</div>
+
+
+
+									<!-- END of price -->
+			</p>
+		</div> <!-- Main Content -->
+
+		<!-- Footer -->
+		<div id="ss-footer">
+			<div id="ss-collab">
+				<div class='ss-fiftypercent'>
+				Entered by <a href="/collaborators/CollaboratorSummary.php?id=2">Luna, Susan M.</a>				</div>
+				<div>
+				Modified by <a href="/collaborators/CollaboratorSummary.php?id=2291">Valdestamon, Roxanne Rei</a>				</div>
+			</div>
+			<div class='ss-moreinfo'>
+				<fb:like href="http://www.fishbase.us/summary/Oncorhynchus-mykiss.html" send="true" layout="button_count" width="400" show_faces="true" ref="bottom_sspage"></fb:like>
+			</div>
+			<div class='ss-div15'>
+				<a href='http://www.fishbase.us/FBForum/index.php'>Fish Forum</a>			</div>
+			<div class='ss-div25'>
+				<a href="#comment" onclick="document.mailx.submit();">Comments & Corrections</a>			</div>
+			<div class='ss-moreinfo'>
+				<a href="http://www.fishbase.us/FBGuestBook/index.php">Sign our Guest Book</a>			</div>
+			<!--- Random Species --->
+			<div class='ss-clearboth'>
+				<div class='ss-div25'>
+				<a href="/search.php">Back to Search</a>				</div>
+
+				<div class='ss-div25'>
+				<a href='/summary/RandomSpecies.php'>Random Species</a>				</div>
+
+				<div class='ss-moreinfo'>
+				<a href="#">Back to Top</a>				</div>
+			</div>
+			<div class="sleft slabel7 ss-clearboth" style="display:none">
+				<BR />Accessed through: <b>Steelhead</b><div class='sleft'>
+								<span class='sleft slabel7'>FishBase mirror site : <strong>Stockholm, Sweden</strong></span>
+							</div>Page last modified by : <a href="/collaborators/CollaboratorSummary.php?id=2262">caldemita</a> - 20 July 2016<FORM name='fn_ecotox' action='http://www.epa.gov/cgi-bin/ecotox_quick_search' method='post' style='visibility : hidden;'>
+		<INPUT type='hidden' name='rbSearchType' value='ANIMAL'>
+		<input type='hidden' name='rbSearchGroup' value='AQUATIC'>
+		<INPUT type='hidden' name='Species1' value='4'>
+		<SELECT name='slSpeciesEntryType1' style='visibility : hidden;'>
+		<OPTION selected>Species Number</SELECT>
+		<INPUT type='hidden' value='ALLDATA' name='rbEffectGroup'>
+		<INPUT type='hidden' value='LIMITTOONEPAGE' name='cbLIMITTOONEPAGE'>
+		<INPUT type='hidden' value='quicksearch' name='Next_Page'>
+		<INPUT type='hidden' value='quicksearch' name='Current_Page'>
+		<INPUT type='hidden' value='0' name='LoadFlag'>
+		<INPUT type='hidden' value='1' name='Report_Number'>
+		</FORM><FORM name='fn_gobase' ACTION='http://amoebidia.bcm.umontreal.ca/pg-gobase/searches/taxon.php' METHOD='POST'> <INPUT TYPE='hidden' Name='Search' VALUE='seq'><INPUT Name='TaxonScientificName'  type='hidden' value='Oncorhynchus mykiss'><INPUT TYPE='hidden' NAME='dataSource' VALUE='' ><INPUT TYPE='hidden' NAME='Map' VALUE='' ><INPUT TYPE='hidden' NAME='PIDrec' VALUE='' ><INPUT type='hidden' Name='GobaseId'  >       <INPUT TYPE='hidden' NAME='sort' VALUE='0' ></form><form action=http://names.ubio.org/rss/fishbase.php name=nodeform method=get>
+       <input type=hidden name=func value=home>
+       <input type=hidden name=node value=230572|216536|113876|113899|114042|876011|123439>
+       <input type=hidden name=sortby value=>
+       <input type=hidden name=page value=1>
+       <input type=hidden name=oldSearch value=''>
+       <input type=hidden name=help>
+       <input type=hidden name=classID value=83>
+	   <input type=hidden name=search value='Oncorhynchus mykiss'>
+</form>
+	<form name='mailx' method='post' action='http://www.fishbase.us/mail/MailForm.php'>
+		<input type='hidden' name='code' value='1'>
+		<input type='hidden' name='pagefrom' value='http://www.fishbase.se/Summary/SpeciesSummary.php?ID=239&AT=steelhead'>
+	</form>
+	
+		<form name='fn' method='post' action='http://www.fishbase.ph/RemoteDataEntry/CheckPassword.cfm'>
+			<input type='hidden' name='id' value='239'>
+			<input type='hidden' name='vtable' value='Species'>
+		</form>
+	<span class='slabel7' >Total processing time for the page : 2.3317 seconds</span>			</div>
+		</div>
+	</div> <!--- close ss-container -->
+
+
+	</body>
+</html>
