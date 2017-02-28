@@ -3,7 +3,8 @@
 ## common name: Muskielunge
 
 
-```
+```python
+
 import urllib.request
 import json
 
@@ -13,10 +14,11 @@ raw_json = urllib.request.urlopen(muskie_url)
 decoded_json = raw_json.read().decode('utf-8')
 parsed_json= json.loads(decoded_json)
 raw_json.close()
-
 ```
 
-```
+
+```python
+
 print("Threat to humans: " + parsed_json["data"][0]["Dangerous"])
 ```
 
