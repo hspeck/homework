@@ -22,6 +22,9 @@ raw_json.close()
 print("Threat to humans: " + parsed_json["data"][0]["Dangerous"])
 ```
 
+    Threat to humans: harmless
+
+
 
 ```python
 print("Comments: " + parsed_json["data"][0]["Comments"])
