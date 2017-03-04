@@ -457,21 +457,87 @@ gapminder[1:20]
 gapminder_small <- gapminder[c(1:9, 19:23),]
 gapminder_small
 ```
+## Part 3 Creating Publication Quality Graphics
 ```{r}
+library("ggplot2")
+ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point()
+```
+### Challenge 1
+```{r}
+ggplot(data = gapminder, aes(x = year, y = lifeExp)) + geom_point()
+```
+
+### Challeng 2
+```{r}
+ggplot(data = gapminder, aes(x = year, y = lifeExp, color = continent)) + geom_point()
+#expect higher in developed world (Europe, N. Am, Australia)
+#expect lower in developing world and areas struggling with disease, e.g. Africa
+```
+Roughly in line with expectations
+```{r}
+ggplot(data = gapminder, aes(x=year, y=lifeExp, by=country, color=continent)) +
+  geom_line()
 ```
 ```{r}
+ggplot(data = gapminder, aes(x=year, y=lifeExp, by=country, color=continent)) +
+  geom_line() + geom_point()
 ```
 ```{r}
+ggplot(data = gapminder, aes(x=year, y=lifeExp, by=country)) +
+  geom_line(aes(color=continent)) + geom_point()
+```
+### Challenge 3
+```{r}
+ggplot(data = gapminder, aes(x=year, y=lifeExp, by=country)) +
+  geom_point() + geom_line(aes(color=continent))
+```
+The lines were drawn on top of the points
+```{r}
+ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp, color=continent)) +
+  geom_point()
 ```
 ```{r}
+ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(alpha = 0.5) + scale_x_log10()
 ```
 ```{r}
+ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point() + scale_x_log10() + geom_smooth(method="lm")
 ```
 ```{r}
+ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point() + scale_x_log10() + geom_smooth(method="lm", size=1.5)
+
+```
+### Challenge 4a
+```{r}
+ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp)) +
+  geom_point(size=0.5, color = "red") + scale_x_log10() + geom_smooth(method="lm", size=1.5)
+```
+### Challenge 4b
+```{r}
+ggplot(data = gapminder, aes(x = gdpPercap, y = lifeExp, color = continent)) +
+  geom_point(size=0.5, aes(shape=continent)) + scale_x_log10() + geom_smooth(method="lm", size=1.5)
+
 ```
 ```{r}
+starts.with <- substr(gapminder$country, start = 1, stop = 1) #grabs the first letter for the country?
+az.countries <- gapminder[starts.with %in% c("A", "Z"), ] #sees if the letter is there
+ggplot(data = az.countries, aes(x = year, y = lifeExp, color=continent)) +
+  geom_line() + facet_wrap( ~ country)
+
 ```
 ```{r}
+ggplot(data = az.countries, aes(x = year, y = lifeExp, color=continent)) +
+  geom_line() + facet_wrap( ~ country) +
+  xlab("Year") + ylab("Life expectancy") + ggtitle("Figure 1") +
+  scale_colour_discrete(name="Continent") +
+  theme(axis.text.x=element_blank(), axis.ticks.x=element_blank()) #theme controls axis text and overall text size
+#legen title change with scales layer
+```
+```{r}
+ggplot(data = gapminder, aes(x= gdpPercap, fill= continent, color =continent)) + geom_density(alpha =0.5) +scale_x_log10() + facet_wrap( ~year)
 ```
 ```{r}
 ```
