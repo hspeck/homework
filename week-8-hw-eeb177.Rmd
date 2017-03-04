@@ -112,3 +112,368 @@ max_duration_taxa<- which.max(nautilaceae$duration)
 cat(nautilaceae[max_duration_taxa,2], nautilaceae[max_duration_taxa,5], "Ma")
 #use this to call the appropriate taxa within the data frame
 ```
+
+
+# Part 2
+
+## 1.
+```{r}
+cats <- read.csv(file = "feline-data.csv")
+age <- c(4,5,8)
+cats <- cbind(cats, age)
+```
+
+```{r}
+newRow <- list("tortoiseshell", 3.3, TRUE, 9)
+cats <- rbind(cats, newRow)
+```
+
+```{r}
+levels(cats$coat)
+
+
+levels(cats$coat) <- c(levels(cats$coat), 'tortoiseshell')
+cats <- rbind(cats, list("tortoiseshell", 3.3, TRUE, 9))
+
+cats
+```
+
+```{r}
+str(cats)
+```
+
+```{r}
+cats$coat <- as.character(cats$coat)
+str(cats)
+```
+
+```{r}
+# remove the 4th column
+cats[-4,]
+```
+
+```{r}
+cats <- na.omit(cats)
+```
+
+```{r}
+cats <- rbind(cats, cats)
+cats
+rownames(cats) <- NULL
+cats
+```
+
+### Challenge 1
+```{r}
+df <- data.frame(first_name = c("Hayden"), last_name = c("Speck"), lucky_number = c(657890), stringsAsFactors = F)
+df <- rbind(df, list("Jean-Erique", "Namme", 0))
+df <- cbind(df, coffee = c(FALSE, TRUE))
+df
+```
+
+
+```{r}
+gapminder <- read.csv("gapminder-FiveYearData.csv")
+```
+
+```{r}
+str(gapminder)
+```
+```{r}
+typeof(gapminder$country)
+```
+```{r}
+str(gapminder$country)
+```
+```{r}
+length(gapminder)
+```
+```{r}
+typeof(gapminder)
+```
+```{r}
+nrow(gapminder)
+```
+```{r}
+ncol(gapminder)
+```
+```{r}
+dim(gapminder)
+```
+```{r}
+colnames(gapminder)
+```
+```{r}
+head(gapminder)
+```
+### Challenge 2
+```{r}
+source(file = "~/scripts/load-gapminder.R")
+```
+
+### Challenge 3
+gapminder is data frame
+1704 rows and 6 columns
+Country and Continent are factors
+year is vector (integer)
+pop, lifeExp and gdp are vectors (numeric)
+
+
+
+## 2. Subsetting Data
+```{r}
+x <- c(5.4, 6.2, 7.1, 4.8, 7.5)
+names(x) <- c('a', 'b', 'c', 'd', 'e')
+x
+```
+
+```{r}
+print(x[1])
+print(x[4])
+print(x[c(1,3)])
+x[1:4]
+```
+
+```{r}
+print(x[c(1,1,3)])
+print(x[6])
+x[0]
+```
+
+```{r}
+print(x[-2])
+print(x[c(-1,-5)])
+```
+
+```{r}
+x<-x[-4]
+x
+```
+### Challenge 1
+```{r}
+x <- c(5.4, 6.2, 7.1, 4.8, 7.5)
+names(x) <- c('a', 'b', 'c', 'd', 'e')
+print(x)
+
+print(x[2:4])
+print(x[c(-1,-5)])
+print(x[c(2,3,4)])
+```
+
+```{r}
+x[c("a", "c")]
+```
+
+```{r}
+x[-which(names(x) == "a")]
+```
+### Challenge 3
+```{r}
+x <- c(5.4, 6.2, 7.1, 4.8, 7.5)
+names(x) <- c('a', 'b', 'c', 'd', 'e')
+print(x)
+test_type <- x[-which(names(x) == "g")]
+#expect a null result
+#instead got a named numeric(0)
+class(test_type)
+#returns a numeric
+```
+A) True
+B) False
+C) true
+D)false
+E)false
+
+```{r}
+x <- 1:3
+names(x) <- c("a", "a", "a")
+x
+```
+
+```{r}
+```
+
+```{r}
+names(x) == c('a', 'c')
+```
+
+
+
+```{r}
+print(x[c(TRUE, TRUE, FALSE, FALSE)])
+print(x[c(TRUE, FALSE)])
+```
+
+```{r}
+x[x>7]
+```
+### Challenge 3
+```{r}
+x <- c(5.4, 6.2, 7.1, 4.8, 7.5)
+names(x) <- c('a', 'b', 'c', 'd', 'e')
+
+x_subset <- x[x<7 & 4<x]
+print(x_subset)
+```
+
+
+```{r}
+f <- factor(c("a", "a", "b", "c", "c", "d"))
+f[f == "a"]
+```
+```{r}
+f[f %in% c("b", "c")]
+```
+```{r}
+f[1:3]
+```
+```{r}
+set.seed(1)
+m <- matrix(rnorm(6*4), ncol=4, nrow=6)
+m[3:4, c(3,1)]
+
+```
+```{r}
+m[, c(3,4)]
+```
+```{r}
+m[3, , drop=FALSE]
+```
+```{r}
+m[, c(3,6)]
+```
+```{r}
+m[5]
+```
+```{r}
+matrix(1:6, nrow=2, ncol=3)
+```
+```{r}
+matrix(1:6, nrow=2, ncol=3, byrow=TRUE)
+```
+
+### Challenge 4
+```{r}
+m <- matrix(1:18, nrow=3, ncol=6)
+print(m)
+```
+
+```{r}
+m[2,4,2,5]
+
+m[2:5]
+
+m[4:5,2]
+
+m[2,c(4,5)]
+```
+A: No, too many dimensions
+B: No will grab a range of values
+C: No subscript out of bounds
+D: Yes, will grab 2,4 then 2,5
+
+```{r}
+xlist <- list(a = "Software Carpentry", b = 1:10, data = head(iris))
+xlist[1]
+```
+```{r}
+xlist[1:2]
+```
+```{r}
+xlist[[1]]
+```
+```{r}
+xlist[[1:2]]
+```
+```{r}
+xlist[[-1]]
+```
+```{r}
+xlist[["a"]]
+```
+```{r}
+xlist$data
+```
+### Challenge 5
+```{r}
+xlist <- list(a = "Software Carpentry", b = 1:10, data = head(iris))
+
+xlist$b[2]
+
+```
+
+### Challenge 6
+```{r}
+mod <- aov(pop ~ lifeExp, data=gapminder)
+
+attributes(mod)
+mod$df.residual
+```
+
+```{r}
+head(gapminder[3])
+```
+```{r}
+head(gapminder[["lifeExp"]])
+```
+```{r}
+head(gapminder$year)
+```
+```{r}
+gapminder[1:3,]
+```
+```{r}
+gapminder[3,]
+```
+### Challenge 7
+```{r}
+# gapminder[gapminder$year = 1957,]
+gapminder[gapminder$year == 1957,]
+```
+```{r}
+#gapminder[,-1:4]
+gapminder[,-c(1:4)]
+```
+```{r}
+#gapminder[gapminder$lifeExp > 80]
+gapminder[gapminder$lifeExp > 80,]
+```
+```{r}
+#gapminder[1, 4, 5]
+gapminder[1, c(4, 5)]
+```
+```{r}
+ # gapminder[gapminder$year == 2002 | 2007,]
+gapminder[gapminder$year == 2002 | gapminder$year == 2007,]
+```
+
+### Challenge 8
+1. gapminder[1:20, ] the columns and rows of the frame
+gapminder[1:20] only gives one dimension of the frame
+```{r}
+gapminder[1:20]
+```
+```{r}
+gapminder_small <- gapminder[c(1:9, 19:23),]
+gapminder_small
+```
+```{r}
+```
+```{r}
+```
+```{r}
+```
+```{r}
+```
+```{r}
+```
+```{r}
+```
+```{r}
+```
+```{r}
+```
+```{r}
+```
+```{r}
+```
