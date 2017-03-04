@@ -1,0 +1,114 @@
+---
+title: "week-8-hw-eeb177"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Part 1
+## 6. Canids
+
+```{r}
+library(ggplot2)
+setwd("/home/eeb177-student/Desktop/eeb-177/homework")
+
+canids <- read.csv("/home/eeb177-student/Desktop/eeb-177/homework/canid-ranges.csv", header =F, as.is = T)
+
+names(canids) <- c("genus", "species", "minage", "maxage")
+head(canids)
+
+#this gives us the data in a nice form for R
+```
+
+```{r}
+canid_occ <- ggplot(canids, aes( species, ymin = maxage, ymax=minage, colour = genus))
+canid_occ <- canid_occ + geom_linerange()
+canid_occ <- canid_occ + theme(legend.position="none") #gets rid of legend
+canid_occ <- canid_occ + coord_flip() #flips the coordinats horizontally
+canid_occ <- canid_occ +  theme(axis.text.y = element_text(size=3)) # resizes text
+canid_occ <- canid_occ + theme(axis.ticks.y=element_blank()) # gets rid of tick marks on y axis
+canid_occ <- canid_occ + scale_y_continuous(limits=c(0, 40), expand = c(0, 0), breaks=c(0, 10, 20, 30, 40)) # gets rid of space on right and left of the graph to make the graph itself larger
+canid_occ <- canid_occ + labs(title = "Canid Fossil Occurrences", x = "Species", y = "Ma ago") + theme(plot.title = element_text(hjust = 0.5, size=22, face = "bold"), axis.title =element_text(size=20))  # adds titles and labels to the graph
+canid_occ
+```
+
+``` {r}
+ggsave(filename = "canid-occ.pdf", plot = canid_occ)
+```
+## 7.
+  1.  What taxonimic group is displayed?
+```{r}
+print("Canids")
+```
+  2.  How many unique fossil speies are contained within it?
+```{r}
+cat("Unique species:", nrow(canids))
+# 172
+```
+  3.  How many unique fossil genera?
+```{r}
+list_of_genera <- unique(canids$genus)
+cat("Number of Genera:", length(list_of_genera))
+# 58
+```
+  4.  What species has the longest duration?
+```{r}
+canids$duration <- canids$maxage - canids$minage
+#gives the data frame a new row with the duration
+max_duration_taxa<- which.max(canids$duration) 
+#this gives the row of the max value
+cat(canids[max_duration_taxa,2], canids[max_duration_taxa,5], "Ma")
+
+#use this to call the appropriate taxa within the data frame
+```
+# Nautilaceae
+```{r}
+
+nautilaceae <- read.csv("/home/eeb177-student/Desktop/eeb-177/homework/nautilaceae-range.csv", header =F, as.is = T)
+
+names(nautilaceae) <- c("genus", "species", "minage", "maxage")
+head(nautilaceae)
+```
+
+```{r}
+nautilaceae_occ <- ggplot(nautilaceae, aes( species, ymin = maxage, ymax=minage, colour = genus))
+nautilaceae_occ <- nautilaceae_occ + geom_linerange()
+nautilaceae_occ <- nautilaceae_occ + theme(legend.position="none") #gets rid of legend
+nautilaceae_occ <- nautilaceae_occ + coord_flip() #flips the coordinats horizontally
+nautilaceae_occ <- nautilaceae_occ +  theme(axis.text.y = element_text(size=1)) # resizes text
+nautilaceae_occ <- nautilaceae_occ + theme(axis.ticks.y=element_blank()) # gets rid of tick marks on y axis
+ nautilaceae_occ <- nautilaceae_occ + scale_y_continuous(limits=c(0, 250), expand = c(0, 0), breaks=c(0, 50, 100, 150, 200, 250)) # gets rid of space on right and left of the graph to make the graph itself larger
+nautilaceae_occ <- nautilaceae_occ + labs(title = "Nautilaceae Fossil Occurrences", x = "Species", y = "Ma ago") + theme(plot.title = element_text(hjust = 0.5, size=22, face = "bold"), axis.title =element_text(size=20))  # adds titles and labels to the graph
+nautilaceae_occ
+```
+
+``` {r}
+ggsave(filename = "nautilaceae_occ.pdf", plot = nautilaceae_occ)
+```
+
+## 7.
+  1.  What taxonimic group is displayed?
+```{r}
+print("Nautilaceae")
+```
+  2.  How many unique fossil speies are contained within it?
+```{r}
+cat("Unique Species:", nrow(nautilaceae))
+# 471
+```
+  3.  How many unique fossil genera?
+```{r}
+list_of_genera <- unique(nautilaceae$genus)
+cat("Number of Genera:", length(list_of_genera))
+# 39
+```
+  4.  What species has the longest duration
+```{r}
+nautilaceae$duration <- nautilaceae$maxage - nautilaceae$minage
+#gives the data frame a new row with the duration
+max_duration_taxa<- which.max(nautilaceae$duration) 
+#this gives the row of the max value
+cat(nautilaceae[max_duration_taxa,2], nautilaceae[max_duration_taxa,5], "Ma")
+#use this to call the appropriate taxa within the data frame
+```
