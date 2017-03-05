@@ -340,7 +340,7 @@ m[, c(3,4)]
 m[3, , drop=FALSE]
 ```
 ```{r}
-m[, c(3,6)]
+#m[, c(3,6)]
 ```
 ```{r}
 m[5]
@@ -359,13 +359,13 @@ print(m)
 ```
 
 ```{r}
-m[2,4,2,5]
+#m[2,4,2,5]
 
-m[2:5]
+#m[2:5]
 
-m[4:5,2]
+#m[4:5,2]
 
-m[2,c(4,5)]
+#m[2,c(4,5)]
 ```
 A: No, too many dimensions
 B: No will grab a range of values
@@ -383,10 +383,10 @@ xlist[1:2]
 xlist[[1]]
 ```
 ```{r}
-xlist[[1:2]]
+#xlist[[1:2]]
 ```
 ```{r}
-xlist[[-1]]
+#xlist[[-1]]
 ```
 ```{r}
 xlist[["a"]]
@@ -451,7 +451,7 @@ gapminder[gapminder$year == 2002 | gapminder$year == 2007,]
 1. gapminder[1:20, ] the columns and rows of the frame
 gapminder[1:20] only gives one dimension of the frame
 ```{r}
-gapminder[1:20]
+#gapminder[1:20]
 ```
 ```{r}
 gapminder_small <- gapminder[c(1:9, 19:23),]
